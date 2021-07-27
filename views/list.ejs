@@ -4,25 +4,31 @@
     <h1> <%= listTitle %> </h1>
   </div>
 
-  <div class="box">
+  <div class="entry">
 
 
   <%  newListItems.forEach(function(item){ %>
 
     <form action="/delete" method="post">
       <div class="item">
-        <input type="checkbox" name="checkbox" value="<%=item._id%>" onChange="this.form.submit()">
+        <input style="background-color: #4378db; color: #fff; font-size: 15px;" type="submit" name="button" value="Delete"></input>
+        <input type="hidden" name="listId" value="<%=item._id%>"></input>
+        <a href="">Edit</a>
+        <p><%=item._id%></p>
+        <p><%=item.date%></p>
         <p><%=item.name%></p>
       </div>
       <input type="hidden" name="listName" value="<%= listTitle %>"></input>
+      <hr style="height:2px;border-width:0 ;background-color:rgb(0, 0, 0)">
     </form>
   <%  }) %>
 
-
+    <div class="addItem">
       <form class="item" action="/" method="post">
-        <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
-        <button type="submit" name="list" value="<%= listTitle %>">+</button>
+        <input type="text" name="newItem" placeholder="New Entry" autocomplete="off">
+        <button type="submit" name="list" value="<%= listTitle %>">Add</button>
       </form>
+    </div>
   </div>
 
 <%- include("footer") -%>
