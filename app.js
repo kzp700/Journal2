@@ -140,6 +140,16 @@ app.get("/entry/:entryId", function(req, res){
   });   
 });
 
+//Heroku settings
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
+
+//local host settings
+
 app.listen(3000, function() {
   console.log("Server started on port 3000");
 });
