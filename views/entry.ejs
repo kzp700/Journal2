@@ -1,0 +1,28 @@
+<%- include("header") -%>
+
+<div class="box" id="heading">
+  <h1> Journal </h1>
+</div>
+
+<div class="entry2 center">
+
+  <form action="/delete" method="post">
+    <div class="item2">
+      <input style="background-color: #db4343; color: #fff; font-size: 15px;" type="submit" name="button" value="Delete"></input>
+      <input type="hidden" name="entryId" value="<%=entry._id%>"></input>
+      <a href="/" style="margin-right: 10px;"><button type="button">Cancel</button></a>
+    </div>
+  </form>
+
+<form class="item2" action="/update" method="post">
+  <textarea type="text" name="updatedEntry" rows="8" cols="80" autocomplete="off" value=""><%=entry.entry%></textarea>
+  <input type="hidden" name="entryId" value="<%=entry._id%>"></input>
+  <input type="hidden" name="entryDate" value="<%=entry.date%>"></input>
+  <button type="submit" name="" value="updatedEntry" style="margin-right: 10px; margin-left: 30px;">Save</button>
+
+</form>
+<br>
+<br>
+</div>
+
+<%- include("footer") -%>
