@@ -34,12 +34,12 @@ const Entry = mongoose.model("Entry", entrySchema);
 
 const entry1 = new Entry({
   date: "07/21/2021",
-  entry: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan tortor posuere ac ut consequat semper viverra. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Ac felis donec et odio. Pellentesque id nibh tortor id aliquet lectus proin nibh."
+  entry: "Welcome to my demo journal app! This CRUD app is live on Heroku and uses MongoDB to store all entries. Upon making an entry, the app will automatically mark the date. If an entry is edited, the original date of the entry is perserved. If all entries are deleted, then the app will repopulate with five demo entries. This app is optimized to be viewed on a computer, but it is fully functional on mobile devices as well."
 });
   
 const entry2 = new Entry({
   date: "07/22/2021",
-  entry: "Nunc id cursus metus aliquam. Et malesuada fames ac turpis egestas maecenas. Euismod lacinia at quis risus. Dolor morbi non arcu risus quis varius quam quisque id. Tortor id aliquet lectus proin nibh nisl. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Feugiat vivamus at augue eget arcu dictum varius duis at. In nisl nisi scelerisque eu ultrices vitae auctor."
+  entry: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan tortor posuere ac ut consequat semper viverra. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Ac felis donec et odio. Pellentesque id nibh tortor id aliquet lectus proin nibh."
 });
   
 const entry3 = new Entry({
