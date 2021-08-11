@@ -34,7 +34,7 @@ const Entry = mongoose.model("Entry", entrySchema);
 
 const entry1 = new Entry({
   date: "07/21/2021",
-  entry: "Welcome to my demo journal app! This CRUD app is live on Heroku and uses MongoDB to store all entries. Upon making an entry, the app will automatically mark the date. If an entry is edited, the original date of the entry is perserved. If all entries are deleted, then the app will repopulate with five demo entries. This app is optimized to be viewed on a computer, but it is fully functional on mobile devices as well."
+  entry: "Welcome to my demo journal app! This CRUD app is live on Heroku and uses MongoDB to store all entries. Upon making an entry, the app will automatically mark the date. If an entry is edited, the original date of the entry is perserved. If all entries are deleted, then the app will repopulate with five demo entries. This app is optimized to be viewed on a PC running Chrome, but it is fully functional on Mac and mobile devices as well."
 });
   
 const entry2 = new Entry({
